@@ -1,0 +1,3 @@
+Question: Look up the Bono East Region and tell me how many people live there, then work out 15% of that number.
+[Model error at step 1: litellm.BadRequestError: GroqException - {"error":{"message":"Tool choice is none, but model called a tool","type":"invalid_request_error","code":"tool_use_failed","failed_generation":"{\"name\": \"wiki_lookup\", \"arguments\": {\"input\":\"Bono East Region\"}}"}}
+]

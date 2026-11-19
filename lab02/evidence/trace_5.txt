@@ -1,0 +1,8 @@
+Question: Say hello and tell me what you can help with.
+
+--- Step 1 ---
+Thought: The user wants a greeting and an explanation of what I can help with. No calculations or lookup needed.  
+Action: finish  
+Action Input: Hello! I’m here to help you with a variety of tasks related to trading at Makola Market—whether you need market price updates, inventory management tips, supply chain advice, or anything else to support your trading activities. Just let me know what you need!
+
+FINAL ANSWER: Hello! I’m here to help you with a variety of tasks related to trading at Makola Market—whether you need market price updates, inventory management tips, supply chain advice, or anything else to support your trading activities. Just let me know what you need!

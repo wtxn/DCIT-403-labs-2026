@@ -1,0 +1,3 @@
+Question: Tell me about the Wikipedia page 'Zorblax Market Spirit of Kumasi 1999'.
+[Model error at step 1: litellm.BadRequestError: GroqException - {"error":{"message":"Tool choice is none, but model called a tool","type":"invalid_request_error","code":"tool_use_failed","failed_generation":"{\"name\": \"wiki_lookup\", \"arguments\": {\"title\":\"Zorblax Market Spirit of Kumasi 1999\"}}"}}
+]

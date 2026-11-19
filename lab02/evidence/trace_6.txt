@@ -1,0 +1,8 @@
+Question: rice 4 bag 185 and also oil?? total left from 1200 how
+
+--- Step 1 ---
+Thought: The user wants to know how much money is left from 1200 after buying 4 bags of rice at 185 each and some oil, but the price of oil is not provided. I need to ask for the oil price before I can calculate the remaining amount.  
+Action: finish  
+Action Input: Could you please provide the price of oil?
+
+FINAL ANSWER: Could you please provide the price of oil?
