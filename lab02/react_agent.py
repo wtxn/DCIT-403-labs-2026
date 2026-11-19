@@ -5,7 +5,11 @@ import sys
 
 from tools import TOOLS
 
-MODEL = os.getenv("LLM_MODEL", "groq/openai/gpt-oss-20b")
+MODEL = os.getenv("LLM_MODEL", "groq/llama-3.3-70b-versatile")
+# gpt-oss-20b tries to use native tool calling with the ReAct prompt; use a
+# llama model instead, which follows the text-based Thought/Action protocol.
+if "gpt-oss-20b" in MODEL:
+    MODEL = "groq/llama-3.3-70b-versatile"
 
 SYSTEM_PROMPT = """You are a helpful assistant for a trader at Makola Market.
 You solve problems by alternating Thought, Action and Action Input.
@@ -47,7 +51,8 @@ def call_model(messages):
     from litellm import completion  # imported here so tools/parser can be tested offline
 
     resp = completion(model=MODEL, messages=messages, stop=["Observation:"],
-                      temperature=0, max_tokens=400)
+                      temperature=0, max_tokens=512,
+                      extra_body={"tool_choice": "none"})
     return resp.choices[0].message.content or ""
 
 
